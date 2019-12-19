@@ -1,11 +1,10 @@
 class Symbol:
     """
     Representa um símbolo Lisp.
-
     Diferentemente de strings, símbolos com o mesmo valor possuem a mesma identidade.
     """
 
-    data : str
+    data = str
     CACHE = {}
 
     def __new__(cls, data):
